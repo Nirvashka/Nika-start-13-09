@@ -1,0 +1,55 @@
+@import "null.scss";
+
+.menu {
+
+  &__body {}
+
+  &__list {}
+
+  &__link {}
+}
+
+.nMenu {}
+
+.srch {
+
+  &__inpt {}
+}
+
+.menuSection {
+
+  &__item {
+    opacity: 0.5;
+    display: inline-block;
+
+
+    &_img {}
+
+    &_txt {}
+  }
+
+  &__item:hover {
+    opacity: 1;
+  }
+}
+
+.burger {
+
+  &__nBburger {}
+
+  &__bList {
+
+    &_nH {}
+
+    &_price {
+      color: red;
+    }
+  }
+
+  &__bItem {
+
+    &_bImg {}
+
+    &_txt {}
+  }
+}

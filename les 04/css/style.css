@@ -1,0 +1,18 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.menuSection__item {
+  opacity: 0.5;
+  display: inline-block;
+}
+
+.menuSection__item:hover {
+  opacity: 1;
+}
+
+.burger__bList_price {
+  color: red;
+}
