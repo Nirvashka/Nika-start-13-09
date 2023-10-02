@@ -1,31 +1,82 @@
-@import "null.scss";
+// @import "_normalize.scss";
+
+@import "_fonts.scss";
+@import "_null.scss";
+
+body {
+  background-color: gray;
+  font-family: $fontFamily;
+  font-size: $fontSize + px;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 360px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
 
 .menu {
 
-  &__body {}
-
-  &__list {}
-
-  &__link {}
+  &__img-icon {
+    margin: 20px 0;
+  }
 }
+
 
 .nMenu {}
 
 .srch {
+  margin: 17px 0 29px 0;
 
-  &__inpt {}
+  &__inpt {
+    border-radius: 12px;
+    background: #EFEFEF;
+    width: 316px;
+    height: 44px;
+    color: #999;
+    font-size: 12px;
+    padding-left: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 
 .menuSection {
+  &__item:first-child {
+    margin: 0;
+  }
 
   &__item {
     opacity: 0.5;
     display: inline-block;
+    text-align: center;
+    margin-left: 28px;
+    margin-bottom: 37px;
 
 
-    &_img {}
 
-    &_txt {}
+
+
+    &_img {
+      display: inline-block;
+      border-radius: 12px;
+      background: #EFEFEF;
+      // width: 74px;
+      // height: 74px;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 8px;
+    }
+
+    &_txt {
+      color: #C4C4C4;
+      font-size: 16px;
+      font-weight: 500;
+
+    }
   }
 
   &__item:hover {
@@ -34,22 +85,52 @@
 }
 
 .burger {
+  margin-bottom: 60px;
 
-  &__nBburger {}
+  &__nBburger {
+    color: #003049;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 29px;
+  }
 
   &__bList {
 
-    &_nH {}
+    &_nH {
+      color: #003049;
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 7px;
+    }
 
     &_price {
-      color: red;
+      color: #D62828;
+      font-size: 14px;
+      font-weight: 500;
     }
   }
 
   &__bItem {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px #E5E5E5;
+    margin-bottom: 15px;
 
-    &_bImg {}
+    &_bImg {
+      display: inline-block;
+      padding: 6px;
 
-    &_txt {}
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &_txt {
+      display: inline-block;
+      padding-top: 21px;
+      position: absolute;
+
+    }
   }
 }
