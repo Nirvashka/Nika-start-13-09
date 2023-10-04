@@ -114,8 +114,9 @@ body {
   font-weight: 500;
 }
 
-.menuSection__item:hover {
+.menuSection_img:hover {
   opacity: 1;
+  background: #EAE2B7;
 }
 
 .burger {
@@ -150,9 +151,14 @@ body {
   margin-bottom: 15px;
 }
 
+.burger__bItem__bItem:last-child {
+  margin-bottom: 0;
+}
+
 .burger__bItem_bImg {
   display: inline-block;
   padding: 6px;
+  vertical-align: top;
 }
 
 .burger__bItem_bImg img {
@@ -163,5 +169,4 @@ body {
 .burger__bItem_txt {
   display: inline-block;
   padding-top: 21px;
-  position: absolute;
 }

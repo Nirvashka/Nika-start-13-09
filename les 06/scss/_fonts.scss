@@ -1,0 +1,20 @@
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "Inter";
+$fontSize: 24px;
+//</Шрифт по умолчанию>==========================================================================================
+
+
+//</ШРИФТЫ>=======================================================================================================
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+
+@font-face {
+  font-family: 'Kyiv*Type Titling';
+  src: url('../fonts/KyivTypeTitling.woff2') format('woff2'),
+      url('../fonts/KyivTypeTitling.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

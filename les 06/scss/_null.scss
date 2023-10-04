@@ -1,0 +1,53 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html {
+  font-size: $fontSize + px;
+}
+
+body {
+  line-height: 1;
+  font-family: $fontFamily;
+}
+
+input,
+button,
+textarea {
+  font-family: $fontFamily;
+}
+
+
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}

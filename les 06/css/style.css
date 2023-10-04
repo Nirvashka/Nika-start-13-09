@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@font-face {
+  font-family: 'Kyiv*Type Titling';
+  src: url("../fonts/KyivTypeTitling.woff2") format("woff2"), url("../fonts/KyivTypeTitling.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html {
+  font-size: 24pxpx;
+}
+
+body {
+  line-height: 1;
+  font-family: "Inter";
+}
+
+input,
+button,
+textarea {
+  font-family: "Inter";
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Inter";
+  font-size: 24px;
+  color: #fff;
+}
+
+.txtUppercase {
+  text-transform: uppercase;
+}
+
+.txtGray {
+  color: #A7A6A6;
+}
+
+.wrapper {
+  width: 1728px;
+  margin: 45px auto;
+}
+
+.container-l {
+  max-width: 52%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logoDay {
+  margin-bottom: 75px;
+}
+
+.logoDay__logo {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 22px;
+}
+
+.logoDay__day {
+  display: inline-block;
+}
+
+.logoDay__day_dayTxt {
+  color: #A7A6A6;
+  font-family: 'Kyiv*Type Titling';
+  font-weight: 500;
+  border-left: 1px solid #fff;
+  margin-top: 8px;
+  padding-left: 22px;
+}
+
+.genre__category:first-child {
+  padding-left: 0;
+}
+
+.genre__category {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  padding-left: 11px;
+  padding-right: 22px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.genre__category:last-child {
+  padding-right: 0;
+  border: none;
+}
+
+.infoFilm__name {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 3.52px;
+}
+
+.infoFilm__tehInfo_infoList:first-child {
+  padding-left: 0;
+}
+
+.infoFilm__tehInfo_infoList {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  padding-left: 11px;
+  padding-right: 22px;
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+
+.infoFilm__tehInfo_infoList:last-child {
+  padding-right: 0;
+  border: none;
+}
+
+.infoFilm__description {
+  color: #A7A6A6;
+  font-weight: 400;
+  line-height: 33.965px;
+  margin-bottom: 32px;
+}
+
+.infoFilm__grade {
+  margin-bottom: 52px;
+}
+
+.infoFilm__grade_star {
+  display: inline-block;
+}
+
+.infoFilm__grade_star:nth-child(-n+3) {
+  color: yellow;
+}
+
+.movies {
+  margin-bottom: 52px;
+}
+
+.movies__btnStream {
+  background: #D40D1F;
+  margin-right: 7%;
+}
+
+.movies__btnStream i {
+  padding-left: 5px;
+}
+
+.movies__btnEpisodes {
+  border: none;
+  background-color: rgba(28, 28, 28, 0);
+  border: 2px solid #fff;
+}
+
+.movies .movives-btn {
+  padding: 16px 34px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31.135px;
+  text-align: center;
+}
+
+.popular__info-nav {
+  margin-bottom: 32px;
+}
+
+.popular__thisWeek {
+  display: inline-block;
+}
+
+.popular__nav-btn {
+  display: inline-block;
+  float: right;
+}
+
+.popular__nav-btn .nav-btn-link {
+  color: #A7A6A6;
+  border-radius: 25px;
+  width: 34.85px;
+  height: 34.85px;
+  border: 1px solid #A7A6A6;
+  padding: 0 6px;
+}
+
+.popular__nav-btn_right:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.popular__films_film {
+  display: inline-block;
+  margin-right: 3.4%;
+}
+
+.popular__films_film:last-child {
+  margin-right: 0;
+}
+
+.container-x {
+  min-width: 47%;
+  display: inline-block;
+}
+
+.search-sing {
+  float: right;
+}
+
+.search-sing__search {
+  display: inline-block;
+  font-size: 43px;
+  padding-top: 15px;
+}
+
+.search-sing__sing {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 40px;
+}
+
+.search-sing__sing_img {
+  width: 74px;
+  height: 74px;
+  border-radius: 74px;
+}
+
+.ageLimit {
+  background: rgba(255, 255, 255, 0.49);
+  width: 174px;
+  height: 66px;
+  border-left: 50px solid #D40D1F;
+  position: relative;
+  margin-top: 100%;
+  margin-left: 81%;
+}
+
+.ageLimit__ageTxt {
+  font-weight: 500;
+  line-height: 33.965px;
+  padding: 15px 25px;
+}

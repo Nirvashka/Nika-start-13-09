@@ -1,0 +1,261 @@
+@import '_fonts.scss';
+@import '_normalize.scss';
+@import '_null.scss';
+
+$color1: #A7A6A6;
+$color2: #fff;
+$btncolor: #D40D1F;
+$ageColor: #D40D1F;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $color2;
+
+}
+
+
+
+.txtUppercase {
+  text-transform: uppercase;
+  ;
+}
+
+.txtGray {
+  color: #A7A6A6;
+}
+
+
+
+.wrapper {
+  width: 1728px;
+  margin: 45px auto;
+}
+
+.container-l {
+  max-width: 52%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logoDay {
+  margin-bottom: 75px;
+
+  &__logo {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 22px;
+  }
+
+  &__day {
+    display: inline-block;
+
+    &_dayTxt {
+      color: $color1;
+      font-family: 'Kyiv*Type Titling';
+      font-weight: 500;
+      border-left: 1px solid $color2;
+      margin-top: 8px;
+      padding-left: 22px;
+    }
+  }
+}
+
+.genre {
+
+  &__category:first-child {
+    padding-left: 0;
+
+  }
+
+  &__category {
+    display: inline-block;
+    border-right: 1px solid $color2;
+    padding-left: 11px;
+    padding-right: 22px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  &__category:last-child {
+    padding-right: 0;
+    border: none;
+  }
+}
+
+.infoFilm {
+
+  &__name {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 3.52px;
+  }
+
+  &__tehInfo {
+
+    &_infoList:first-child {
+      padding-left: 0;
+    }
+
+    &_infoList {
+      display: inline-block;
+      border-right: 1px solid $color2;
+      padding-left: 11px;
+      padding-right: 22px;
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+
+    &_infoList:last-child {
+      padding-right: 0;
+      border: none;
+    }
+  }
+
+  &__description {
+    color: #A7A6A6;
+    font-weight: 400;
+    line-height: 33.965px;
+    margin-bottom: 32px;
+  }
+
+  &__grade {
+    margin-bottom: 52px;
+
+    &_star {
+      display: inline-block;
+    }
+
+    &_star:nth-child(-n+3) {
+      color: yellow;
+    }
+  }
+}
+
+.movies {
+  margin-bottom: 52px;
+
+  &__btnStream {
+    background: $btncolor;
+    margin-right: 7%;
+
+    i {
+      padding-left: 5px;
+    }
+  }
+
+  &__btnEpisodes {
+    border: none;
+    background-color: rgba(28, 28, 28, 0);
+    border: 2px solid $color2;
+  }
+
+  .movives-btn {
+    padding: 16px 34px;
+    border-radius: 10px;
+    color: $color2;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 31.135px;
+    text-align: center;
+  }
+}
+
+.popular {
+
+  &__info-nav {
+    margin-bottom: 32px;
+  }
+
+  &__thisWeek {
+    display: inline-block;
+  }
+
+  &__nav-btn {
+    display: inline-block;
+    float: right;
+
+    .nav-btn-link {
+      color: $color1;
+      border-radius: 25px;
+      width: 34.85px;
+      height: 34.85px;
+      border: 1px solid $color1;
+      padding: 0 6px;
+    }
+
+    &_left {}
+
+    &_right:hover {
+      color: $color2;
+      border: 1px solid $color2;
+    }
+  }
+
+
+  &__films {
+
+    &_film {
+      display: inline-block;
+      margin-right: 3.4%;
+    }
+
+    &_film:last-child {
+      margin-right: 0;
+    }
+  }
+
+}
+
+.container-x {
+  min-width: 47%;
+  display: inline-block;
+}
+
+.search-sing {
+  float: right;
+
+  &__search {
+    display: inline-block;
+    font-size: 43px;
+    padding-top: 15px;
+  }
+
+  &__sing {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+
+    &_img {
+      width: 74px;
+      height: 74px;
+      border-radius: 74px;
+    }
+  }
+}
+
+.ageLimit {
+  background: rgba(255, 255, 255, 0.49);
+  width: 174px;
+  height: 66px;
+  border-left: 50px solid $ageColor;
+  position: relative;
+  margin-top: 100%;
+  margin-left: 81%;
+
+  &__ageTxt {
+    font-weight: 500;
+    line-height: 33.965px;
+    padding: 15px 25px;
+
+  }
+
+
+}
