@@ -108,15 +108,18 @@ body {
   margin-bottom: 8px;
 }
 
+.menuSection__item_img:hover {
+  background-color: #EAE2B7;
+}
+
 .menuSection__item_txt {
   color: #C4C4C4;
   font-size: 16px;
   font-weight: 500;
 }
 
-.menuSection_img:hover {
+.menuSection__item:hover {
   opacity: 1;
-  background: #EAE2B7;
 }
 
 .burger {
@@ -151,14 +154,9 @@ body {
   margin-bottom: 15px;
 }
 
-.burger__bItem__bItem:last-child {
-  margin-bottom: 0;
-}
-
 .burger__bItem_bImg {
   display: inline-block;
   padding: 6px;
-  vertical-align: top;
 }
 
 .burger__bItem_bImg img {
@@ -169,4 +167,9 @@ body {
 .burger__bItem_txt {
   display: inline-block;
   padding-top: 21px;
+  position: absolute;
+}
+
+.burger__bItem:last-child {
+  margin-bottom: 0;
 }
