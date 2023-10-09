@@ -1,17 +1,38 @@
-@import "null.scss";
+@import "_fonts.scss";
+@import "_normalize.scss";
+@import "_null.scss";
+
+$bgcolor1: #FFF;
+$bgcolor2: #FAC960;
+$bgcolor3: #F2F2F2;
+
+body {
+  font-family: $fontFamily;
+
+}
+
+.container {
+  width: 938px;
+  margin: 0 auto;
+}
 
 .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
 
   &__logo {
 
-    &_img {}
+    &_img {
+      width: 37px;
+      height: 37px;
+    }
   }
 
   &__icon {
+    font-size: 25px;
 
     &_link {}
-
-    &_soc {}
   }
 }
 
@@ -27,7 +48,10 @@
   }
 }
 
+
+
 .get {
+  background-color: $bgcolor2;
 
   &__title {}
 
@@ -40,6 +64,7 @@
 }
 
 .space {
+  background-color: $bgcolor3;
 
   &__txt {
 
@@ -66,6 +91,7 @@
 }
 
 .tell {
+  background-color: $bgcolor2;
 
   &__infor {
 
@@ -78,6 +104,7 @@
 }
 
 .footer {
+  background-color: $bgcolor3;
 
   &__logo {}
 

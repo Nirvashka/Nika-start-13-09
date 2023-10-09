@@ -1,0 +1,292 @@
+@import "_fonts";
+@import "_null.scss";
+
+
+$grayColumn: #F9F9F9;
+$footerBtn: #3F9AB7;
+$itemHover: #F2994A;
+$text: #4F4F4F;
+$menuH1: #000;
+$footerTxt: #fff;
+$infoBorder: #333;
+
+.grayColumn {
+  background-color: $grayColumn;
+  height: 100%;
+  width: 8%;
+  display: block;
+  position: fixed;
+  top: 0%;
+  left: 19%;
+  z-index: -1;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.header {
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+
+  &__icon {}
+
+  &__body {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__list {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+
+
+    li:nth-child(3) {
+      margin-right: 30%;
+    }
+
+    li {
+      padding-left: 4%;
+      font-family: $fontFamily;
+      font-size: $fontSizeMenu;
+
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      /* 22.8px */
+      letter-spacing: 1px;
+    }
+
+    li:first-child {
+      padding-left: 0;
+    }
+  }
+
+  &__link {
+    color: $menuH1;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $itemHover;
+      margin: 10px auto 10px auto;
+      border-radius: 100%;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+
+}
+
+.icon-menu {}
+
+.fistSection {
+  display: flex;
+  margin-bottom: 3%;
+
+
+  &__img {
+    display: flex;
+  }
+}
+
+.borderContent {
+  border-right: 1px solid $infoBorder;
+}
+
+.info {
+  letter-spacing: 1px;
+  width: 53%;
+  margin-left: 19%;
+
+  .containerInfo {
+    width: 80%;
+  }
+
+  &__txtH3 {
+    color: $itemHover;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $fontFamily;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 3%;
+
+    span {
+      float: right;
+    }
+  }
+
+
+  &__txtH1 {
+    color: $menuH1;
+    font-family: $fontFamily;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    margin-bottom: 10%;
+
+
+  }
+
+  &__txtp {
+    color: $text;
+    font-family: $fonttFamily2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    width: 53%;
+    margin-bottom: 4%;
+
+  }
+
+  &__txtp::before {
+    content: '';
+    display: block;
+    height: 6px;
+    background: $itemHover;
+    width: 50%;
+    border-radius: 4px;
+    margin-bottom: 33px;
+  }
+
+  &__media {
+    &_btn {
+      background-color: $footerBtn;
+      width: 85px;
+      height: 85px;
+      border-radius: 100%;
+    }
+
+    i {
+      display: inline-flex;
+      font-size: 35px;
+      padding-left: 5px;
+    }
+
+    &_p {
+      color: $menuH1;
+
+      font-family: $fontFamily;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      /* 21.6px */
+      letter-spacing: 1px;
+      display: inline-block;
+      vertical-align: top;
+      padding: 30px
+    }
+
+    &_social {
+      display: flex;
+      float: right;
+      flex-direction: column;
+      position: relative;
+      left: 11px;
+
+      a:nth-child(3) {
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      a {
+        position: relative;
+        left: 8px;
+        width: 34px;
+        height: 34px;
+        border-radius: 100%;
+        padding: 8px;
+
+        &:hover {
+          background-color: $itemHover;
+
+          .imgDefolt {
+            display: none;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+// .imgDefolt{
+//   display: none;
+
+// }
+
+.footerClient {
+  display: flex;
+  justify-content: center;
+  background-color: $footerBtn;
+  padding: 2% 0;
+
+  img {}
+
+  img:nth-child(1) {
+    z-index: 1;
+    position: relative;
+    left: 21px;
+  }
+
+  img:nth-child(2) {
+    z-index: 2;
+  }
+
+  img:nth-child(3) {
+    z-index: 3;
+    position: relative;
+    right: 21px;
+  }
+
+
+
+  &__numb {
+    color: $footerTxt;
+    font-family: $fontFamily;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+
+
+    span {
+      color: $footerTxt;
+      font-family: $fontFamily;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding-right: 10px;
+    }
+  }
+}
+
+@import "_media.scss"
