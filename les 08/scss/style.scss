@@ -1,0 +1,323 @@
+@import "_font.scss";
+@import "_null.scss";
+
+$backGround: #95CFD5;
+$backGroundText: #7CBFC7;
+$textColorMenuVideo: black;
+$textColorBody: white;
+
+.wrapper {
+  width: 100vw;
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  background-color: $backGround;
+}
+
+header {
+
+  padding: 1% 0;
+  background-color: white;
+}
+
+.lol {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.logo {
+
+
+  &__link {
+
+    &_imgLogo {}
+  }
+}
+
+
+.menu {
+  width: 50%;
+
+  &__iconMenu {
+    display: none;
+
+    &_iconListMenu {
+      &:first-child {
+        padding-left: 0;
+      }
+
+      padding-left: 21%;
+    }
+
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding-left: 10%;
+    }
+
+    li:first-child {
+      padding-left: 0;
+    }
+
+
+    &_link {
+      color: $textColorMenuVideo;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.175rem;
+
+      &:hover {
+        border-bottom: 5px solid black;
+        padding-bottom: 16%;
+
+      }
+
+    }
+  }
+}
+
+.spaceLi {
+  padding-right: 27%;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.icons {
+  display: flex;
+  position: relative;
+  right: 2.3%;
+
+
+  &__icon {
+
+
+    &_imgIcon {}
+  }
+}
+
+
+.basic {
+  display: flex;
+
+  &__sectionInformation {
+    margin-top: 23%;
+
+    &_titleNameProduct {
+      color: $textColorBody;
+      font-size: 9.375rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 9.375rem;
+      margin-bottom: 3%;
+    }
+
+    &_txtAboutProduct {
+      color: $textColorBody;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5rem;
+      /* 150% */
+      margin-bottom: 6%;
+    }
+  }
+
+  &__navBtn {
+    display: flex;
+    margin-bottom: 12%;
+
+    &_shopNow {
+      display: flex;
+      width: 17rem;
+      height: 3.25rem;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-color: black;
+      margin-right: 8%;
+      color: #FFF;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5rem;
+      /* 150% */
+      text-transform: uppercase;
+
+    }
+
+    &_watchVideo {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      border: 1px solid black;
+      width: 3.25rem;
+      height: 3.25rem;
+      border-radius: 100%;
+      margin-right: 1%;
+
+      span {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 100%;
+        background-color: black;
+      }
+
+      i {
+        align-items: center;
+        position: relative;
+        top: 29%;
+        text-transform: uppercase;
+
+      }
+
+    }
+
+    &_txtWatchVideo {
+      text-transform: uppercase;
+      padding-top: 0.8rem;
+    }
+  }
+
+  &__speciesImg {
+    display: flex;
+
+    &_itemKetle {
+      padding: 6% 17%;
+    }
+  }
+
+  &__indicators {
+    display: inline-flex;
+    float: right;
+    flex-direction: column;
+    position: relative;
+    bottom: 47%;
+
+    align-items: flex-end;
+
+    &_circle {
+      color: white;
+      display: flex;
+      border: 1px solid white;
+      border-radius: 100%;
+      width: 1rem;
+      height: 1rem;
+
+      .circeActive {
+        background-color: #fff;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 100%;
+        display: none;
+      }
+
+      &:hover {
+        .circeActive {
+          display: block;
+        }
+      }
+
+      span {
+        border-radius: 100%;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #fff;
+        position: absolute;
+
+      }
+
+      i {
+        font-weight: 400;
+        font-size: 9px;
+        position: relative;
+        top: 15%;
+        left: 2px;
+
+
+      }
+
+    }
+  }
+
+  .circeDefolt {}
+}
+
+.borderSpeciesImg {
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  border: 1px solid white;
+  margin-right: 3%;
+  border-radius: 0.4375rem;
+
+  &:hover {
+    background-color: #fff;
+
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.container {
+  width: 40%;
+  margin: 3% auto 0;
+}
+
+.container-2 {
+  width: 80%;
+}
+
+.flt {
+  float: right;
+}
+
+
+
+.sectionImage {
+  margin-top: 11%;
+
+  &__selectedKetle {
+    display: flex;
+
+    &_bigImgKetle {
+      display: flex;
+    }
+
+    &_backColorKetle {
+      display: flex;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+      align-items: center;
+      font-size: 14rem;
+      color: #7CBFC7;
+      height: 100px;
+      position: absolute;
+      right: 53%;
+      z-index: -1;
+      top: 75%;
+      left: 78%;
+
+    }
+  }
+
+}
+
+@import "_media.scss";
