@@ -14,6 +14,15 @@ console.log(vegetableQuantity);
 alert(frut + ' itogo ' + frutPrice * frutQuantity + ' grn!');
 alert(vegetable + ' itogo ' + vegetablePrice * vegetableQuantity + ' grn!');
 
+let zagFryt = frutPrice * frutQuantity;
+let zagVegetable = vegetablePrice * vegetableQuantity;
+let sum = zagFryt + zagVegetable;
+console.log('Zag sum ' + sum);
+let discount = 5;
+let discountSum = sum / 100 * discount;
+alert('Znuszhka vid zagalnoi symu: ' + discountSum);
+alert('Do splatu: ' + (sum - discountSum));
+
 let takeNumber = 40 / 2;
 let surveyMenis = 47 - 6;
 let summaLater = 45 + 68;
