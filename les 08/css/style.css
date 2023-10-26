@@ -47,7 +47,6 @@ body {
 }
 
 header {
-  padding: 1% 0;
   background-color: white;
 }
 
@@ -62,6 +61,7 @@ header {
   position: sticky;
   width: 90%;
   margin: 0 auto;
+  padding: 15px 0;
 }
 
 .menu {
@@ -108,7 +108,7 @@ header {
 
 .menu__list_link:hover {
   border-bottom: 5px solid black;
-  padding-bottom: 16%;
+  padding: 14px 0;
 }
 
 .spaceLi {
@@ -331,6 +331,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .sectionImage__selectedKetle_bigImgKetle {
@@ -353,10 +354,9 @@ header {
   color: #7CBFC7;
   height: 100px;
   position: absolute;
-  right: 53%;
   z-index: -1;
-  top: 75%;
-  left: 78%;
+  top: 213px;
+  left: 159px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -364,9 +364,6 @@ header {
     font-size: 8rem;
   }
   .basic__navBtn_txtWatchVideo {
-    display: none;
-  }
-  .sectionImage__selectedKetle_backColorKetle {
     display: none;
   }
 }
@@ -418,6 +415,15 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .sectionImage__selectedKetle_backColorKetle {
+    position: relative;
+    left: -8%;
+    top: 1 em;
+  }
+  .sectionImage__selectedKetle_bigImgKetle {
+    position: relative;
+    left: 16em;
   }
   .menu {
     width: 8%;
@@ -476,11 +482,29 @@ header {
   .basic__sectionInformation {
     margin-top: 7%;
   }
+  .sectionImage {
+    margin-left: 0;
+  }
+  .sectionImage__selectedKetle_backColorKetle {
+    font-size: 12em;
+    top: 193px;
+  }
+  .sectionImage__selectedKetle_bigImgKetle {
+    width: 78%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .basic__sectionInformation_titleNameProduct {
     font-size: 7rem;
+  }
+  .sectionImage__selectedKetle_backColorKetle {
+    font-size: 10em;
+    top: 150px;
+  }
+  .sectionImage__selectedKetle_bigImgKetle {
+    position: relative;
+    left: 45%;
   }
 }
 
@@ -513,11 +537,13 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .sectionImage__selectedKetle {
-    width: 100%;
-  }
   .sectionImage__selectedKetle_bigImgKetle {
-    width: 100%;
+    width: 70%;
+  }
+  .sectionImage__selectedKetle_backColorKetle {
+    font-size: 8em;
+    top: 110px;
+    left: -8px;
   }
 }
 
@@ -537,6 +563,14 @@ header {
   .basic__navBtn_shopNow {
     width: 14rem;
   }
+  .sectionImage__selectedKetle_backColorKetle {
+    font-size: 6em;
+    top: 102px;
+    left: -8px;
+  }
+  .sectionImage__selectedKetle_bigImgKetle {
+    left: 107px;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -550,5 +584,9 @@ header {
   .basic__navBtn_watchVideo {
     width: 3rem;
     height: 3rem;
+  }
+  .sectionImage__selectedKetle_backColorKetle {
+    font-size: 5em;
+    top: 91px;
   }
 }

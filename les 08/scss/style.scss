@@ -18,7 +18,6 @@ body {
 
 header {
 
-  padding: 1% 0;
   background-color: white;
 }
 
@@ -28,6 +27,7 @@ header {
   position: sticky;
   width: 90%;
   margin: 0 auto;
+  padding: 15px 0;
 
 }
 
@@ -80,7 +80,8 @@ header {
 
       &:hover {
         border-bottom: 5px solid black;
-        padding-bottom: 16%;
+        padding: 14px 0;
+        ;
 
       }
 
@@ -296,6 +297,7 @@ header {
 
   &__selectedKetle {
     display: flex;
+    position: relative;
 
     &_bigImgKetle {
       display: flex;
@@ -310,10 +312,10 @@ header {
       color: #7CBFC7;
       height: 100px;
       position: absolute;
-      right: 53%;
+
       z-index: -1;
-      top: 75%;
-      left: 78%;
+      top: 213px;
+      left: 159px;
 
     }
   }
