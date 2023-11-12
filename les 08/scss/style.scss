@@ -219,6 +219,9 @@ header {
       border-radius: 100%;
       width: 1rem;
       height: 1rem;
+      justify-content: center;
+      align-items: center;
+      position: relative;
 
       .circeActive {
         background-color: #fff;
@@ -246,11 +249,6 @@ header {
       i {
         font-weight: 400;
         font-size: 9px;
-        position: relative;
-        top: 15%;
-        left: 2px;
-
-
       }
 
     }
