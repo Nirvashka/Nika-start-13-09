@@ -204,57 +204,13 @@ header {
   }
 
   &__indicators {
-    display: inline-flex;
-    float: right;
+    display: flex;
     flex-direction: column;
-    position: relative;
-    bottom: 47%;
-
-    align-items: flex-end;
-
-    &_circle {
-      color: white;
-      display: flex;
-      border: 1px solid white;
-      border-radius: 100%;
-      width: 1rem;
-      height: 1rem;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-
-      .circeActive {
-        background-color: #fff;
-        width: 0.5rem;
-        height: 0.5rem;
-        border-radius: 100%;
-        display: none;
-      }
-
-      &:hover {
-        .circeActive {
-          display: block;
-        }
-      }
-
-      span {
-        border-radius: 100%;
-        width: 0.5rem;
-        height: 0.5rem;
-        background-color: #fff;
-        position: absolute;
-
-      }
-
-      i {
-        font-weight: 400;
-        font-size: 9px;
-      }
-
-    }
+    position: absolute;
+    top: 50%;
+    left: 120%;
   }
 
-  .circeDefolt {}
 }
 
 .borderSpeciesImg {
@@ -282,6 +238,7 @@ header {
 
 .container-2 {
   width: 80%;
+  position: relative;
 }
 
 .flt {
@@ -318,6 +275,60 @@ header {
     }
   }
 
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 13px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+  content: '';
+  width: 8px;
+  height: 7px;
+  background: #fff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 @import "_media.scss";
