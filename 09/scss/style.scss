@@ -1,0 +1,514 @@
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url(../fonts/BebasNeue.ttf);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:,regular,500,600,700,800&display=swap&subset=cyrillic-ext);
+
+/*///////////////////*/
+@import "_null.scss";
+@import "_commons.scss";
+@import "_header.scss";
+@import "_footer.scss";
+
+
+/*---------section-nav start -----------*/
+.main {
+  font-family: OpenSans;
+
+  &__section-nav {}
+}
+
+.section-nav {
+  padding: 24px 0;
+  border-bottom: 1px solid #E6E6E6;
+  ;
+
+  &__container {}
+
+  &__logo {
+    display: inline-block;
+  }
+
+  &__menu {
+    display: inline-block;
+    float: right;
+  }
+
+}
+
+.menu {
+
+  &__list {}
+
+  &__item {}
+
+  &__link {
+    margin-left: 24px;
+    color: #48555B;
+    font-weight: 600;
+    letter-spacing: 1.0912px;
+    font-size: 12px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+  }
+
+}
+
+.active,
+.menu__link:hover {
+  color: #00A4E5;
+}
+
+/*---------section-nav end -----------*/
+
+/*--------- початок блоку з онсвною інфою сайта -----------*/
+.main {
+
+  &__basic-content {}
+}
+
+.content-basic {
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin: 57px 0 47px 0;
+    padding-bottom: 10px;
+    position: relative;
+    letter-spacing: 2.3056px;
+    font-size: 18px;
+    font-weight: 700;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      left: 47.5%;
+      background-color: #00A4E5;
+      width: 50px;
+
+    }
+  }
+
+  &__we {
+    display: grid;
+    margin-bottom: 120px;
+    grid-template: 1fr / 1fr 1fr;
+
+
+    &_text-info {
+      margin-right: 15%;
+      font-size: .8125rem;
+      line-height: 1.4375rem;
+      /* 176.923% */
+      letter-spacing: .0118rem;
+    }
+
+    &_img-info {
+      display: flex;
+      gap: 15px;
+      justify-content: space-between;
+    }
+  }
+
+  &__secondRow {
+
+    &_secondRowTitle {}
+
+    &_bnt {}
+  }
+
+  &__items {
+
+    &_item {}
+  }
+}
+
+.bold-text {
+  letter-spacing: .1888px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+  span {
+    color: #16ACE8;
+  }
+
+  ;
+}
+
+.info-img {
+
+  &__item {
+    display: flex;
+    margin-left: 12px;
+
+
+    &_first {
+      position: relative;
+      width: 150px;
+
+
+      p {
+        display: flex;
+        position: absolute;
+        color: white;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        /* 120.833% */
+        letter-spacing: .1888px;
+        padding: 20px 0 0 20px;
+        text-transform: uppercase;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &_second {
+      position: relative;
+      width: 150px;
+
+      p {
+        display: flex;
+        position: absolute;
+        color: white;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        /* 120.833% */
+        letter-spacing: .1888px;
+        padding: 20px 0 0 20px;
+        text-transform: uppercase;
+
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &_third {
+      position: relative;
+      width: 150px;
+
+      p {
+        display: flex;
+        position: absolute;
+        color: white;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        /* 120.833% */
+        letter-spacing: .1888px;
+        padding: 20px 0 0 20px;
+        text-transform: uppercase;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/*--------- кунець блоку з онсовною інфою сайта -----------*/
+
+/*--------- start блоку з second інфою сайта -----------*/
+.content-basic {
+  &__secondRow {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 76px;
+
+    &_secondRowTitle {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2.3056px;
+    }
+
+    &_secondRowText {
+      width: 400px;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 19px;
+      /* 172.727% */
+      letter-spacing: .2px;
+      position: absolute;
+      left: 37%;
+    }
+
+    &_bnt {}
+  }
+}
+
+.afterTitle {
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00A4E5;
+    width: 50px;
+
+  }
+}
+
+// /*--------- end блоку з second інфою сайта -----------*/
+
+.bnt-blue {
+  width: 150px;
+  height: 40px;
+  background: #00A4E5;
+  color: white;
+  text-transform: uppercase;
+}
+
+// /*--------- start блоку з second карточки -----------*/
+.content-basic {
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    column-gap: 23px;
+    padding-bottom: 117px;
+
+    &_item {}
+  }
+}
+
+.item-card {
+  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template: auto 1fr minmax(40px, auto)/ 1fr;
+  border: 1px solid #E6E6E6;
+  padding: 0px 7px 39px 23px;
+
+  &__itemImg {
+    padding-bottom: 140px;
+
+    img {
+      width: 67px;
+      height: 70px;
+      position: absolute;
+      top: 37px;
+      left: 23px;
+      object-fit: cover;
+    }
+  }
+
+  &__itemTitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: .4272px;
+    padding-bottom: 17px;
+  }
+
+  &__itemMoreText {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    /* 176.923% */
+    letter-spacing: .1888px;
+  }
+}
+
+// /*--------- end блоку з second карточки -----------*/
+
+// /*--------- start Want to build something amazing?-----------*/
+.main {
+  &__wantBuild {
+    padding-top: 7.5rem;
+    background: url(../img/up-footer.png), lightgray 0rem 0rem / 100% 100% no-repeat;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    background-size: 100% 101%;
+
+    h2 {
+      text-align: center;
+      font-size: 1.875rem;
+      font-weight: 700;
+      line-height: 2.25rem;
+      /* 120% */
+      letter-spacing: .0094rem;
+      padding-bottom: 2.625rem;
+      width: 21.875rem;
+    }
+
+    a {
+      display: grid;
+      justify-content: center;
+      margin-bottom: 15.125rem;
+    }
+  }
+}
+
+// /*--------- end Want to build something amazing?-----------*/
+
+// /*--------- start Newsletter Signup-----------*/
+.main {
+  &__newsletter {
+    background: #171819;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+
+    p {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: .8464px;
+      color: #fff;
+      padding-right: 36px;
+    }
+
+    &_form {
+      display: flex;
+
+      input {
+        border: 1px solid #979797;
+        background: #FFF;
+        width: 250px;
+        height: 40px;
+        padding-left: 17px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: .0704px;
+      }
+
+      label {
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        padding-top: 11px;
+      }
+    }
+  }
+}
+
+// /*--------- end Newsletter Signup-----------*/
+
+// /*--------- start bigcontinfo-----------*/
+.bottomInfo {
+
+  &__wrapper {
+    background: #141A20;
+    padding: 2.625rem 0 2.625rem 0;
+
+  }
+
+  &__grid {
+    color: #fff;
+    font-size: .6875rem;
+    letter-spacing: .0529rem;
+    display: grid;
+    grid-template: minmax(6.25rem, auto) / 3fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  &__col1 {
+    padding-right: 3.9375rem;
+
+    &_nameCompany {
+      padding-bottom: 1.1875rem;
+    }
+
+    &_logo {
+      padding-bottom: 1.0625rem;
+    }
+
+    &_btiTxt {
+      line-height: 1.1875rem;
+      /* 172.727% */
+    }
+  }
+
+  &__col2 {
+
+    &_nameLink {
+      color: #fff;
+
+      margin-bottom: .8125rem;
+      display: inline-block;
+    }
+  }
+
+  &__col3 {
+    padding-top: 1.875rem;
+  }
+
+  &__col4 {
+    padding-top: 1.875rem;
+  }
+
+  &__col5 {
+
+    &_col5title {
+      text-transform: uppercase;
+      padding-bottom: .9375rem;
+
+    }
+
+    line-height: 1rem;
+
+    /* 145.455% */
+    p {
+      padding-bottom: 1.0625rem;
+    }
+  }
+
+  &__col6 {
+    padding-left: 1.6875rem;
+
+    a {
+      padding-right: 1.4375rem;
+
+      img {
+        width: .75rem;
+        height: .75rem;
+      }
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.list-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.5625rem;
+  /* 227.273% */
+}
+
+// /*--------- end bigcontinfo-----------*/
+
+@import "_media.scss";

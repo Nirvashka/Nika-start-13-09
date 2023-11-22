@@ -1,0 +1,49 @@
+.header {
+  background: url('../img/bg-header.png') 0 0 no-repeat;
+  background-size: 100% 101%;
+  width: 100%;
+  color: white;
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  gap: .9375rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    max-height: 48.0625rem;
+    flex-direction: column;
+  }
+
+  &__logo {}
+
+  &__title {
+    padding: 20% 0;
+  }
+
+  &__scrollDown {
+    letter-spacing: .2313rem;
+    font-weight: 600;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 4.375rem;
+  }
+}
+
+.title {
+  &__h1 {
+    font-family: 'BebasNeueBold';
+    font-size: 3.75rem  ;
+    letter-spacing: .3568rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+  }
+}

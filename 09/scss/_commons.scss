@@ -1,0 +1,27 @@
+body {
+  font-family: 'Open Sans', serif;
+  color: #48555B;
+  font-size: .8125rem;
+
+}
+
+/************************/
+.wrapper {
+  min-height: 100vh;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+/************************/
+[class*="__container"] {
+  max-width: 60.625rem;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+  margin: 0rem auto;
+}
+
+/************************/
+main {
+  flex: 1 1 auto;
+}
