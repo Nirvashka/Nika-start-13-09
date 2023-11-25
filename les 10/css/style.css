@@ -1,0 +1,409 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light:regular);
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+}
+
+.row {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+.btn {
+  padding: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/*  ------------------------------------------------------- fonts -------------------------------------------------------   */
+@font-face {
+  font-family: 'Yu Gothic';
+  src: url("../fonts/yugothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  ----------------------------------------------------- end fonts -------------------------------------------------------   */
+.titleFfFs {
+  text-align: center;
+  font-family: Shadows Into Light;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1875rem;
+  /* 87.5% */
+  padding: 2.125rem 0rem .9375rem 0rem;
+}
+
+.h3groupstyle {
+  font-family: Yu Gothic;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.1875rem;
+  padding: 0rem 0rem 2.125rem 0rem;
+  text-align: center;
+}
+
+/*  ----------------------------------------------------- start header -------------------------------------------------------   */
+.header {
+  background-color: #668E68;
+  padding: .9375rem 0rem .9375rem 0rem;
+}
+
+.navList {
+  display: none;
+}
+
+.vector-icon {
+  float: right;
+  color: #fff;
+}
+
+.vector-icon i {
+  font-size: 2.0625rem;
+  padding-top: .1875rem;
+}
+
+/*  ----------------------------------------------------- end header -------------------------------------------------------   */
+/*  --------------------------------------------------- start fullImage -------------------------------------------------------   */
+.fullImage {
+  background-image: url(../img/sm-coffee.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fullImage__firstTitle {
+  padding: 8.75rem 0rem 8.75rem 0;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.4);
+  font-family: Shadows Into Light;
+  font-size: 3.125rem;
+  font-weight: 400;
+}
+
+/*  ----------------------------------------------------- end fullImage -------------------------------------------------------   */
+/*  --------------------------------------------------- start menu -------------------------------------------------------   */
+.menu__title {
+  text-align: center;
+  padding: 2.5rem 0rem 1.25rem 0rem;
+}
+
+.menu__title h2 {
+  color: #000;
+}
+
+.menu__title h3 {
+  color: #000;
+}
+
+.menu__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__cards_item {
+  position: relative;
+}
+
+.menu__cards img {
+  max-width: 18.75rem;
+  max-height: 18.75rem;
+  margin-bottom: 1.875rem;
+}
+
+.menu__cards img:first-child {
+  border-radius: 100%;
+  border: .4375rem solid #81613B;
+}
+
+.menu__menuBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4.1875rem;
+}
+
+.btn {
+  background-color: #668E68;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 3.125rem;
+  color: #FFF;
+  font-family: Yu Gothic;
+  font-size: 1rem;
+}
+
+.btn i {
+  padding-left: 1.25rem;
+}
+
+/*  ----------------------------------------------------- end menu -------------------------------------------------------   */
+/*  --------------------------------------------------- start about -------------------------------------------------------   */
+.about {
+  background-image: url(../img/sm-about-bg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+
+.about__aboutTitleTxt {
+  text-align: center;
+}
+
+.about__groupText {
+  text-align: left;
+  padding: 0rem 0rem 2.125rem .9375rem;
+}
+
+.about__aboutBnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.125rem;
+}
+
+/*  ----------------------------------------------------- end about -------------------------------------------------------   */
+/*  --------------------------------------------------- start news -------------------------------------------------------   */
+.news {
+  background: rgba(129, 97, 59, 0.2);
+}
+
+.news__colorgbText {
+  border: .0625rem solid #668E68;
+  background: #FFF;
+  padding: 1.25rem;
+  margin-bottom: 2.1875rem;
+}
+
+/*  ----------------------------------------------------- end news -------------------------------------------------------   */
+/*  --------------------------------------------------- start footer -------------------------------------------------------   */
+.footer {
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  position: relative;
+}
+
+.footer__column1 {
+  line-height: 1.5625rem;
+  /* 156.25% */
+  font-family: Yu Gothic;
+  font-size: 1rem;
+  display: block;
+  padding: 2.1875rem 0rem 2.1875rem 0rem;
+}
+
+.footer__column1 a {
+  color: #fff;
+}
+
+.footer__column2 {
+  margin-bottom: 1.25rem;
+  font-family: Georgia;
+  font-size: .625rem;
+}
+
+.footer__button {
+  position: absolute;
+  background-color: #668E68;
+  border-radius: 100%;
+  left: 90%;
+  top: 77%;
+  padding: 0rem .25rem 0rem .25rem;
+  color: #fff;
+}
+
+.rowFd {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*  ----------------------------------------------------- end footer -------------------------------------------------------   */
+@media (min-width: 26.5625rem) {
+  /*  --------------------------------------------------- start about -------------------------------------------------------   */
+  .about__groupText {
+    text-align: center;
+    padding: 0rem 0rem 2.125rem .9375rem;
+  }
+  /*  ----------------------------------------------------- end about -------------------------------------------------------   */
+}
+
+@media (min-width: 48rem) {
+  /*  --------------------------------------------------- start footer -------------------------------------------------------   */
+  .footer {
+    padding: 1.5625rem 0rem 5rem 0rem;
+    position: relative;
+  }
+  .footer__column1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0rem 0rem 0 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .footer__column2 {
+    font-size: 1rem;
+    text-align: right;
+    margin-bottom: 0;
+  }
+  .footer__button {
+    position: absolute;
+    background-color: #668E68;
+    border-radius: 100%;
+    left: 95%;
+    top: 77%;
+    padding: 0rem .25rem 0rem .25rem;
+    color: #fff;
+  }
+  .rowFd {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /*  ----------------------------------------------------- end footer -------------------------------------------------------   */
+}
+
+@media (min-width: 64rem) {
+  /*  ----------------------------------------------------- start header -------------------------------------------------------   */
+  .header .navList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    color: #fff;
+    font-weight: 500;
+    font-family: Yu Gothic;
+    font-size: 1.125rem;
+    padding: .3125rem 0rem .3125rem 0rem;
+  }
+  .header .navList__item {
+    padding-left: 1.5rem;
+  }
+  .header .navList__item:first-child {
+    padding-left: 0;
+  }
+  .header .vector-icon {
+    display: none;
+  }
+  /*  ----------------------------------------------------- end header -------------------------------------------------------   */
+  /*  --------------------------------------------------- start fullImage -------------------------------------------------------   */
+  .fullImage__firstTitle {
+    font-size: 4.6875rem;
+  }
+  /*  ----------------------------------------------------- end fullImage -------------------------------------------------------   */
+  /*  --------------------------------------------------- start menu -------------------------------------------------------   */
+  .menu__title {
+    padding: 2.5rem 0rem 1.25rem 0rem;
+  }
+  .menu__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu__cards_item {
+    position: relative;
+  }
+  /*  ----------------------------------------------------- end menu -------------------------------------------------------   */
+  /*  --------------------------------------------------- start about -------------------------------------------------------   */
+  .about {
+    background-image: url(../img/about-bg.png);
+  }
+  /*  ----------------------------------------------------- end about -------------------------------------------------------   */
+  /*  --------------------------------------------------- start news -------------------------------------------------------   */
+  .news .row-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .news .row-row p:first-child {
+    padding-right: 2.1875rem;
+  }
+  /*  ----------------------------------------------------- end news -------------------------------------------------------   */
+}

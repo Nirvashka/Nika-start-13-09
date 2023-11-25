@@ -1,0 +1,259 @@
+@import "_null.scss";
+@import "_nullBoot.scss";
+/*  ------------------------------------------------------- fonts -------------------------------------------------------   */
+// &display=swap
+// @font-face {
+//   font-family: 'BebasNeueBold';
+//   src: url(../fonts/BebasNeue.ttf);
+// }
+
+
+
+// Shadows Into Light
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light:regular);
+
+// @font-face {
+//   font-family: ;
+//   src: url(../fonts/yugothic.ttf);
+// }
+
+@font-face {
+  font-family: 'Yu Gothic';
+  src: url('../fonts/yugothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  ----------------------------------------------------- end fonts -------------------------------------------------------   */
+
+.titleFfFs {
+  text-align: center;
+  font-family: Shadows Into Light;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1875rem;
+  /* 87.5% */
+  padding: 2.125rem 0rem .9375rem 0rem;
+}
+
+.h3groupstyle {
+  font-family: Yu Gothic;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.1875rem;
+  padding: 0rem 0rem 2.125rem 0rem;
+  text-align: center;
+}
+
+/*  ----------------------------------------------------- start header -------------------------------------------------------   */
+.header {
+  background-color: #668E68;
+  padding: .9375rem 0rem .9375rem 0rem;
+
+  &__logo {}
+
+  &__lists {
+
+    &_list {}
+  }
+}
+
+.navList {
+  display: none;
+
+  &__item {}
+}
+
+.vector-icon {
+  float: right;
+  color: #fff;
+
+  i {
+    font-size: 2.0625rem;
+    padding-top: .1875rem;
+  }
+}
+
+/*  ----------------------------------------------------- end header -------------------------------------------------------   */
+
+
+/*  --------------------------------------------------- start fullImage -------------------------------------------------------   */
+.fullImage {
+  background-image: url(../img/sm-coffee.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  &__firstTitle {
+    padding: 8.75rem 0rem 8.75rem 0;
+    text-align: center;
+    color: #FFF;
+    text-shadow: .3125rem .3125rem .3125rem rgba(0, 0, 0, 0.40);
+    font-family: Shadows Into Light;
+    font-size: 3.125rem;
+    font-weight: 400;
+
+  }
+}
+
+/*  ----------------------------------------------------- end fullImage -------------------------------------------------------   */
+
+
+/*  --------------------------------------------------- start menu -------------------------------------------------------   */
+.menu {
+
+  &__title {
+    text-align: center;
+    padding: 2.5rem 0rem 1.25rem 0rem;
+
+    h2 {
+      color: #000;
+    }
+
+    h3 {
+      color: #000;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_item {
+      position: relative;
+    }
+
+    img {
+      max-width: 18.75rem;
+      max-height: 18.75rem;
+      margin-bottom: 1.875rem;
+
+      &:first-child {
+        border-radius: 100%;
+        border: .4375rem solid #81613B;
+      }
+    }
+  }
+
+  &__menuBtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.1875rem;
+  }
+}
+
+.btn {
+  background-color: #668E68;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 3.125rem;
+  color: #FFF;
+  font-family: Yu Gothic;
+  font-size: 1rem;
+
+  i {
+    padding-left: 1.25rem;
+  }
+}
+
+/*  ----------------------------------------------------- end menu -------------------------------------------------------   */
+
+
+/*  --------------------------------------------------- start about -------------------------------------------------------   */
+.about {
+  background-image: url(../img/sm-about-bg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #FFF;
+
+  &__aboutTitleTxt {
+    text-align: center;
+  }
+
+  &__groupText {
+    text-align: left;
+    padding: 0rem 0rem 2.125rem .9375rem;
+  }
+
+  &__aboutBnt {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.125rem;
+  }
+}
+
+
+/*  ----------------------------------------------------- end about -------------------------------------------------------   */
+
+
+/*  --------------------------------------------------- start news -------------------------------------------------------   */
+.news {
+  background: rgba(129, 97, 59, 0.20);
+
+  &__newstitle {}
+
+  &__colorgbText {
+    border: .0625rem solid #668E68;
+    background: #FFF;
+    padding: 1.25rem;
+    margin-bottom: 2.1875rem;
+
+    &_firstRow {}
+
+    &_secondRow {}
+  }
+}
+
+.newsStyle {}
+
+/*  ----------------------------------------------------- end news -------------------------------------------------------   */
+
+
+/*  --------------------------------------------------- start footer -------------------------------------------------------   */
+.footer {
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  position: relative;
+
+  &__column1 {
+    line-height: 1.5625rem;
+    /* 156.25% */
+    font-family: Yu Gothic;
+    font-size: 1rem;
+    display: block;
+    padding: 2.1875rem 0rem 2.1875rem 0rem;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &__column2 {
+    margin-bottom: 1.25rem;
+    font-family: Georgia;
+    font-size: .625rem;
+  }
+
+  &__button {
+    position: absolute;
+    background-color: #668E68;
+    border-radius: 100%;
+    left: 90%;
+    top: 77%;
+    padding: 0rem .25rem 0rem .25rem;
+    color: #fff;
+  }
+}
+
+.rowFd {
+  flex-direction: column;
+}
+
+/*  ----------------------------------------------------- end footer -------------------------------------------------------   */
+
+@import "_media.scss";
