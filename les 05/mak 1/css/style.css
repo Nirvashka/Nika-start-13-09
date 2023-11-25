@@ -447,7 +447,7 @@ body {
   border: 1px solid #758696;
   background: #FFF;
   text-align: center;
-  margin-left: 500px;
+  margin: 0 auto;
 }
 
 .head {
